@@ -9,28 +9,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Lato:wght@700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@300;500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Lato:wght@700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Mx`ontserrat:wght@300;500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
         <!-- <link rel="stylesheet" href="./assets/fonts/stylesheet.css"> -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <main>
-        <!-------------- Header -------------------->
-        <header class="header">
+    <main id="home">
+        <header class="fix-header">
             <div class="content">
                 <nav class="navbar">
                     <!-- Logo -->
-                    <img src="./assets/img/Logo.svg" alt="Besnik.">
+                    <a href="#home">
+                        <img src="./assets/img/Logo.svg" alt="Besnik.">
+                    </a>
 
                     <!-- Navication -->
                     <ul>
-                        <li><a href="#!">Home</a></li>
-                        <li><a href="#!">Features</a></li>
-                        <li><a href="#!">Service</a></li>
-                        <li><a href="#!">Resource</a></li>
-                        <li><a href="#!">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#resource">Resource</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
 
                     <!-- Action -->
@@ -40,6 +58,12 @@
                     </div>
                     <!-- header content -->
                 </nav>
+            </div>
+        </header>
+
+        <!-------------- Header -------------------->
+        <header class="header">
+            <div class="content">
                 <div class="hero">
                     <div class="info">
                         <p class="sub-title">Welcome to Besnik Agency</p>
@@ -73,17 +97,28 @@
                     <p class="desc">5 Star Ratings (2k+ Review)</p>
                 </div>
                 <div class="images">
-                    <img src="./assets/img/client-1.svg" alt="1">
-                    <img src="./assets/img/client-2.svg" alt="2">
-                    <img src="./assets/img/client-3.svg" alt="3">
-                    <img src="./assets/img/client-4.svg" alt="4">
-                    <img src="./assets/img/client-5.svg" alt="5">
+                    <a href="#!">
+                        <img src="./assets/img/client-1.svg" alt="1">
+                    </a>
+                
+                    <a href="#!">
+                        <img src="./assets/img/client-2.svg" alt="2">
+                    </a>
+                    <a href="#!">
+                        <img src="./assets/img/amazon.svg" alt="3">
+                    </a>
+                    <a href="#!">
+                        <img src="./assets/img/client-4.svg" alt="4">
+                    </a>
+                    <a href="#!">
+                        <img src="./assets/img/client-5.svg" alt="5">
+                    </a>
                 </div>
 
             </div>
         </div>
         <!-- =============Guides======== -->
-        <div class="guides">
+        <div id="service" class="guides">
             <div class="content">
                 <h2 class="sub-title">How its works?</h2>
                 <p class="desc">Everything you need to know when you're looking to buy, rent, or sell - all in one place.</p>
@@ -119,7 +154,7 @@
             </div>
         </div>
         <!-- ==============Featured================= -->
-        <div class="featured">
+        <div id="features" class="featured">
             <div class="content">
                 <header>
                     <h2 class="sub-title">Featured Properties</h2>
@@ -186,7 +221,7 @@
             </div>
         </div>
         <!-- ---------------Stats -->
-        <div class="stats">
+        <div id="resource" class="stats">
             <div class="content">
                 <div class="row">
                     <div class="img-block">
@@ -260,7 +295,7 @@
             </div>
         </div>
         <!-- ---------Subcription----------- -->
-        <div class="subcription">
+        <div id="contact" class="subcription">
             <div class="content">
                 <div class="body">
                     <div class="info">
